@@ -1,0 +1,111 @@
+body {
+  background: linear-gradient(to right, rgb(205, 153, 90), rgb(230, 216, 173));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0; 
+  flex-direction: column; 
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+.titre {
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: x-large;
+  color: white;
+  transform: scale(1.05);
+  animation: bounce 2s infinite;
+  margin-bottom: 20px; 
+}
+
+#musicToggleButton {
+  background-color: #ff7048;
+  font-size: 15px;
+  border-radius: 10px;
+  padding: 10px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s ease;
+}
+
+#musicToggleButton:hover {
+  color: white;
+  background-color: rgb(255, 122, 6);
+  transform: scale(1.05);
+}
+
+#playerXScore, #playerOScore {
+  color: white;
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: x-large;
+  margin-bottom: 20px; 
+}
+
+#objet {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  width: 100%; 
+  margin-bottom: 20px; 
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 5px;
+  margin-bottom: 60px; 
+}
+
+.grid-item {
+  background-color: #ff7048;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  font-size: 24px;
+  transition: transform 0.5s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.grid-item:hover {
+  background-color: #e0e0e0;
+  color: white;
+  transform: scale(1.05);
+}
+
+#resetButton {
+  background-color: #ff7048;
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 25px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s ease;
+}
+
+#resetButton:hover {
+  color: white;
+  background-color: rgb(255, 122, 6);
+  transform: scale(1.05);
+}
+
+
